@@ -1,0 +1,22 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'vps-hardware'
+    metrics_path: '/metrics/vps'
+    scheme: 'https'
+    basic_auth:
+      username: 'aleixsim'
+      password: 'yourpasswd'
+    static_configs:
+      - targets: ['production.com']
+
+  - job_name: 'container-metrics'
+    metrics_path: '/metrics/containers'
+    scheme: 'https'
+    basic_auth:
+      username: 'aleixsim'
+      password: 'yourpasswd'
+    static_configs:
+      - targets: ['production.com']
