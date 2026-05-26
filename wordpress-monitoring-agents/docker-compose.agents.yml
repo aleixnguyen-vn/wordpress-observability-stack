@@ -17,7 +17,7 @@ services:
       - crawler_net
 
   cadvisor:
-    image: gcr.io/cadvisor/cadvisor:v0.49.1
+    image: gcr.io/cadvisor/cadvisor:v0.52.1
     container_name: crawler-containers
     restart: unless-stopped
     privileged: true
@@ -35,7 +35,7 @@ services:
       - crawler_net
 
   promtail:
-    image: grafana/promtail:3.0.0
+    image: grafana/promtail:3.3.2
     container_name: crawler-logs
     restart: unless-stopped
     volumes:
