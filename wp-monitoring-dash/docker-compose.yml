@@ -1,6 +1,6 @@
 services:
   prometheus:
-    image: prom/prometheus:v2.52.0
+    image: prom/prometheus:v3.11.3
     container_name: main-prometheus
     restart: unless-stopped
     volumes:
@@ -16,7 +16,7 @@ services:
       - monitoring_net
 
   loki:
-    image: grafana/loki:3.0.0
+    image: grafana/loki:3.3.2
     container_name: main-loki
     restart: unless-stopped
     ports:
@@ -29,7 +29,7 @@ services:
       - monitoring_net
 
   grafana:
-    image: grafana/grafana:11.0.0
+    image: grafana/grafana:12.4.0
     container_name: main-grafana
     restart: unless-stopped
     environment:
@@ -37,7 +37,7 @@ services:
     volumes:
       - grafana-data:/var/lib/grafana
     ports:
-      - "0.0.0.0:3000:3000" # Open to public for dashboard access
+      - "0.0.0.0:3000:3000"
     networks:
       - monitoring_net
 
