@@ -1,8 +1,8 @@
 # Observability Stack for Live Product
 
-[![Prometheus](https://img.shields.io/badge/Prometheus-v2.52.0-E6522C?style=flat&logo=prometheus&logoColor=white)](https://prometheus.io/)
-[![Grafana](https://img.shields.io/badge/Grafana-v11.0.0-F46800?style=flat&logo=grafana&logoColor=white)](https://grafana.com/)
-[![Loki](https://img.shields.io/badge/Loki-v3.0.0-F5A800?style=flat&logo=grafana&logoColor=white)](https://grafana.com/oss/loki/)
+[![Prometheus](https://img.shields.io/badge/Prometheus-v3.11.3-E6522C?style=flat&logo=prometheus&logoColor=white)](https://prometheus.io/)
+[![Grafana](https://img.shields.io/badge/Grafana-v12.4.0-F46800?style=flat&logo=grafana&logoColor=white)](https://grafana.com/)
+[![Loki](https://img.shields.io/badge/Loki-v3.3.2-F5A800?style=flat&logo=grafana&logoColor=white)](https://grafana.com/oss/loki/)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=flat&logo=docker&logoColor=white)](https://docs.docker.com/compose/)
 
 Monitoring configuration for a *[live commercial WordPress platform](https://github.com/aleixnguyen-vn/simracing-community-platform-stack)* serving 4,000-5,000 daily sessions. The stack follows a decentralized design: lightweight collection agents run alongside the application, while all storage and visualization workloads are handled by a dedicated monitoring server to keep observability overhead off the production host.
@@ -51,6 +51,10 @@ Handles all compute-heavy operations independently from the production workload.
 ---
 
 ## Dashboard
+> [!NOTE]
+> Stack versions have been updated. Dashboard screenshots reflect an earlier version; 
+>UI layout may differ slightly from the current release.
+
 
 ![Grafana Node Exporter Full](artifacts/grafana-k4.png)
 *Live production telemetry - NGINX, Redis Cache (Panel Title) and MariaDB log streams alongside CPU, memory, and system load under real user traffic.*
@@ -59,4 +63,4 @@ Handles all compute-heavy operations independently from the production workload.
 
 ## Proof of Work
 
-Verification artifacts (endpoint curl responses, basic auth headers, Grafana data source configuration, data over hours) are available in [/artifacts](./artifacts).
+Verification artifacts (endpoint curl responses, basic auth headers, Grafana data source configuration, data over hours, new UI for Grafana) are available in [/artifacts](./artifacts).
