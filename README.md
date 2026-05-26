@@ -52,11 +52,11 @@ Handles all compute-heavy operations independently from the production workload.
 
 ## Dashboard
 
-![Grafana Node Exporter Full](artifacts/grafana-k2.png)
+![Grafana Node Exporter Full](artifacts/grafana-k4.png)
 *Live production telemetry - NGINX, Redis Cache (Panel Title) and MariaDB log streams alongside CPU, memory, and system load under real user traffic.*
 
 ---
 
 ## Proof of Work
 
-Verification artifacts (endpoint curl responses, basic auth headers, Grafana data source configuration) are available in [/artifacts](./artifacts).
+Verification artifacts (endpoint curl responses, basic auth headers, Grafana data source configuration, data over hours) are available in [/artifacts](./artifacts).
