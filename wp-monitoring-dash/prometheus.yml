@@ -3,7 +3,7 @@ global:
   evaluation_interval: 15s
 
 scrape_configs:
-  - job_name: 'vps-hardware'
+  - job_name: 'node' # required configs for new Grafana/Prom versions
     metrics_path: '/metrics/vps'
     scheme: 'https'
     basic_auth:
