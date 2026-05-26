@@ -57,7 +57,7 @@ Handles all compute-heavy operations independently from the production workload.
 
 
 ![Grafana Node Exporter Full](artifacts/grafana-k4.png)
-*Live production telemetry - NGINX, Redis Cache (Panel Title) and MariaDB log streams alongside CPU, memory, and system load under real user traffic.*
+*Live telemetry - NGINX, Redis Cache and MariaDB log streams alongside CPU, memory, and system load under traffics from 8PM to 7AM (GMT +7).*
 
 ---
 
